@@ -98,6 +98,7 @@ const Form = () => {
       })
       return
     }
+    const lowerCaseDepartment = department.toLowerCase();
     const data = {
       des,
       pnr,
@@ -105,7 +106,7 @@ const Form = () => {
       email,
       name,
       imgurl,
-      department,
+      department:lowerCaseDepartment,
       text
 
     }

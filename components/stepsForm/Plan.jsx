@@ -7,13 +7,14 @@ const Plan = ({ department, setDepartment }) => {
   const words = `We sincerely apologize for the inconvenience. It looks like you've encountered an issue related to ${department}. Don't worry, we're on it and ready to assist you!`;
 
   const departments = [
-    "Cleaning",
-    "Maintenance",
-    "Health",
+    "Cleanliness",
+    "Staff Behaviour",
     "Security",
-    "Food & Water",
+    "Medical Assurance",
     "Ticketing",
-    "Others"
+    "Water AvailabilitY",
+    "Maintenance",
+    "Others",
   ];
 
   const handleDepartmentChange = (e) => {

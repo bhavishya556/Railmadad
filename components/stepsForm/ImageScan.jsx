@@ -173,12 +173,12 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
 
                     <div className="mt-4 ">
                         {webcamEnabled ? (
-                            <div className="flex gap-4 bg-red-200 shadow-xl p-4 items-center  flex-col">
+                            <div className="flex gap-4  shadow-xl p-4 items-center  flex-col">
                                 <Webcam
                                     audio={false}
                                     ref={webcamRef}
                                     screenshotFormat="image/jpeg"
-                                    className="rounded h-60 w-120"
+                                    className="rounded "
                                     
                                     videoConstraints={{
                                         facingMode: "environment", // Switch to "environment" for the rear camera
