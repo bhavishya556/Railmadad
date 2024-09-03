@@ -50,7 +50,7 @@ const Form = () => {
   const [des, setDes] = useState("");
   const [Qid, setQid] = useState("");
 
-  console.log("img =", imgurl, "text = ", text)
+  // console.log("img =", imgurl, "text = ", text)
 
 
 
@@ -194,7 +194,7 @@ const Form = () => {
   return (
     <div className=" md:px-36 md:mt-20  my-5 ">
 
-      <h1 className="text-center text-2xl  font-semibold text-red-700 mb-5">RailMadad</h1>
+      <h1 className="text-center text-2xl md:text-4xl  font-semibold text-red-700 mb-5">RailMadad</h1>
       {
         analysis && (
 
