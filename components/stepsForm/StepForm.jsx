@@ -90,6 +90,7 @@ const Form = () => {
 
   //send all data
   const createMainQueary = async () => {
+
     if(!pnr){
       toast({
         variant: "destructive",
@@ -98,6 +99,7 @@ const Form = () => {
       })
       return
     }
+
     const lowerCaseDepartment = department.toLowerCase();
     const data = {
       des,
@@ -112,8 +114,9 @@ const Form = () => {
     }
 
     const res = await createQuery(data);
-    console.log("main",res)
+    // console.log("main",res)
     setQid(res.data._id);
+    setDisplayThankyou(true)
 
   }
   const nextStep = async () => {
@@ -175,7 +178,7 @@ const Form = () => {
 
     if (stepNumber == 3) {
       createMainQueary()
-      setDisplayThankyou(true)
+     
 
     }
 
