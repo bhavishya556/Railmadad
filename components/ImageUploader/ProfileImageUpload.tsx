@@ -65,7 +65,7 @@ const ProfileImageUpload = ({ name }: { name: string }) => {
             {isLoading && (
                <DotLoader/>
             )}
-            <Input className="focus:border-purple-500 tracking-wide"
+            <Input className="focus:border-red-500 tracking-wide"
                 accept='image/*'
                 type="file"
                 ref={fileInputRef}

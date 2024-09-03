@@ -32,7 +32,7 @@ export default function Navbar() {
 
     return (
         <div
-            className={` top-0 left-0 bg-white w-full md:h-[20vh] z-[990] transition-opacity duration-500 `}
+            className={` top-0 left-0 bg-white w-full md:h-[20vh] z-[990] transition-opacity duration-500 shadow-md border-b border-gray-200  `}
         >
             <div className='bg-white max-md:hidden'>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
 
                 </Marquee>
             </div>
-            <div className="w-full bg-white py-1.5 sm:py-3 px-3 sm:px-10 shadow-md border-b border-gray-200 flex relative">
+            <div className="w-full bg-white py-1.5 sm:py-3 px-3 sm:px-10 flex relative">
                 <Link href="/">
                     <div className='flex gap-2 justify-start items-center flex-[25%] relative'>
                         <Image

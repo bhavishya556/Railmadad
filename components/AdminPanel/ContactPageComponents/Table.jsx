@@ -54,7 +54,7 @@ const Table = ({ contacts, totalPages, pageSize, pageNo }) => {
       <h1 className="text-2xl font-bold mb-6">Contact Submissions</h1>
       <div className="overflow-x-auto">
         <table className="w-full bg-white shadow-md rounded-lg">
-          <thead className="bg-purple-200">
+          <thead className="bg-red-200">
             <tr>
               <th className="py-2 px-2 text-left">Sno.</th>
               <th className="py-2 px-2 text-left">Name</th>
@@ -95,7 +95,7 @@ const Table = ({ contacts, totalPages, pageSize, pageNo }) => {
       <div className="flex justify-between items-center mt-2">
       <div className="flex gap-2">
           <Link
-            className={`px-2 py-1.5 bg-purple-600 rounded-md text-sm text-white ${
+            className={`px-2 py-1.5 bg-red-600 rounded-md text-sm text-white ${
               pageNo === 1 ? 'opacity-50 cursor-not-allowed' : ''
             }`}
             href={{
@@ -108,7 +108,7 @@ const Table = ({ contacts, totalPages, pageSize, pageNo }) => {
           </Link>
           
           <Link
-            className={`px-2 py-1.5 bg-purple-700 rounded-md text-sm text-white ${
+            className={`px-2 py-1.5 bg-red-700 rounded-md text-sm text-white ${
               pageNo >= totalPages ? 'opacity-50 cursor-not-allowed' : ''
             }`}
             href={{

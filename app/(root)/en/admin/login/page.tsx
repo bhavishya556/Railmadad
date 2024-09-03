@@ -96,14 +96,14 @@ export default function page() {
   };
 
   return (
-    <div className="flex min-h-screen w-full">
-        <div className="flex-1 hidden lg:flex justify-center items-center bg-slate-700">
+    <div className="flex bg-white min-h-screen w-full">
+        <div className="flex-1 hidden lg:flex justify-center items-center bg-red-400">
         <Link href="/">
             <Image
-              src="/images/BizWlogo.svg"
+              src="/r2.png"
               alt="img"
-              height={200}
-              width={200}
+              height={500}
+              width={500}
               className=""
             />
         </Link>
@@ -127,7 +127,7 @@ export default function page() {
                   <FormItem >
                     <FormLabel className="text-base md:text-lg">Email</FormLabel>
                     <FormControl>
-                      <Input placeholder="Email" disabled={loading} className="focus:border-purple-500" {...field} />
+                      <Input placeholder="Email" disabled={loading} className="focus:border-red-500" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -143,7 +143,7 @@ export default function page() {
                   <FormItem>
                     <FormLabel className="text-base md:text-lg">Password</FormLabel>
                     <FormControl>
-                      <Input placeholder="Password" disabled={loading} type="password" className="focus:border-purple-500" {...field} />
+                      <Input placeholder="Password" disabled={loading} type="password" className="focus:border-red-500" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

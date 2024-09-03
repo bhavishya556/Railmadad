@@ -13,13 +13,13 @@ const poppins = Poppins({
 export default function Page() {
     return (
         <div className="flex justify-center items-center w-full h-full flex-col gap-2">
-            <p className={`text-2xl text-purple-600 text-center font-[600] tracking-wide uppercase ${poppins.className} `}>
+            <p className={`text-2xl text-red-600 text-center font-[600] tracking-wide uppercase ${poppins.className} `}>
                 Admin Dashboard
             </p>
 
             <Link href="/">
             <Image
-              src="/images/Biz_logo.svg"
+              src="/r2.png"
               alt="img"
               height={500}
               width={500}

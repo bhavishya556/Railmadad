@@ -13,8 +13,8 @@ const LogoutButton =  () => {
     }
 
     return (
-        <div className="p-1 rounded-full bg-purple-100 fixed top-4 md:top-6 right-6 md:right-8 cursor-pointer" onClick={handleClick}>
-            <IoMdLogOut className="text-purple-800 text-2xl" />
+        <div className="p-1 rounded-full bg-red-100 fixed top-4 md:top-6 right-6 md:right-8 cursor-pointer" onClick={handleClick}>
+            <IoMdLogOut className="text-red-800 text-2xl" />
         </div>
     )
 }
