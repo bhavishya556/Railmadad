@@ -41,21 +41,21 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
         }
     };
 
-    useEffect(() => {
-        // Function to request camera access
-        const requestCameraAccess = async () => {
-          try {
-           const cam =  await navigator.mediaDevices.getUserMedia({ video: true });
-           console.log("camera",cam)
-            setHasPermission(true); // Permission granted
-          } catch (err) {
-            console.error("Camera permission error:", err);
-            setHasPermission(false); // Permission denied or error
-          }
-        };
+    // useEffect(() => {
+    //     // Function to request camera access
+    //     const requestCameraAccess = async () => {
+    //       try {
+    //        const cam =  await navigator.mediaDevices.getUserMedia({ video: true });
+    //        console.log("camera",cam)
+    //         setHasPermission(true); // Permission granted
+    //       } catch (err) {
+    //         console.error("Camera permission error:", err);
+    //         setHasPermission(false); // Permission denied or error
+    //       }
+    //     };
     
-        requestCameraAccess();
-      }, []);
+    //     requestCameraAccess();
+    //   }, []);
 
     // Function to handle file selection from input
     const handleImageUpload = (file) => {
@@ -173,12 +173,13 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
 
                     <div className="mt-4 ">
                         {webcamEnabled ? (
-                            <div className="flex gap-4  shadow-xl p-4 items-center  flex-col">
+                            <div className="flex gap-4 bg-red-200 shadow-xl p-4 items-center  flex-col">
                                 <Webcam
                                     audio={false}
                                     ref={webcamRef}
                                     screenshotFormat="image/jpeg"
-                                    className="rounded h-60"
+                                    className="rounded h-60 w-120"
+                                    
                                     videoConstraints={{
                                         facingMode: "environment", // Switch to "environment" for the rear camera
                                         width: 1280,
