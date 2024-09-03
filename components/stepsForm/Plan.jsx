@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import TextGenerateEffectDemo from "@/components/Text/TextGenerateEffect";
 
 const Plan = ({ department, setDepartment }) => {
@@ -7,8 +7,8 @@ const Plan = ({ department, setDepartment }) => {
   const words = `We sincerely apologize for the inconvenience. It looks like you've encountered an issue related to ${department}. Don't worry, we're on it and ready to assist you!`;
 
   const departments = [
-    "Cleanliness",
     "Staff Behaviour",
+    "Cleanliness",
     "Security",
     "Medical Assurance",
     "Ticketing",
@@ -16,6 +16,16 @@ const Plan = ({ department, setDepartment }) => {
     "Maintenance",
     "Others",
   ];
+
+  useEffect(() => {
+    if (!departments.includes(department)) {
+      setDepartment(departments[0]); // Default to the first option if invalid
+    }
+  }, [department, setDepartment, departments]);
+
+
+
+
 
   const handleDepartmentChange = (e) => {
 

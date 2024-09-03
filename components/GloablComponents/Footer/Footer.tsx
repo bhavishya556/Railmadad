@@ -47,11 +47,11 @@ const Footer = () => {
                                 Quick Links
                             </p>
                             <nav className={`flex flex-col mt-4 space-y-2 text-sm text-gray-900 ${roboto.className}`}>
-                                <Link className="hover:opacity-90 text-white" href="/about">Train </Link>
-                                <Link className="hover:opacity-90 text-white" href="/services">Feedback </Link>
-                                <Link className="hover:opacity-90 text-white" href="/career">Enquriy </Link>
-                                <Link className="hover:opacity-90 text-white" href="/policy">Track Your Concern </Link>
-                                <Link className="hover:opacity-90 text-white" href="/term">Suggestion</Link>
+                                <Link className="hover:opacity-90 text-white" href="/">Train </Link>
+                                <Link className="hover:opacity-90 text-white" href="/">Feedback </Link>
+                                <Link className="hover:opacity-90 text-white" href="/">Enquriy </Link>
+                                <Link className="hover:opacity-90 text-white" href="/">Track Your Concern </Link>
+                                <Link className="hover:opacity-90 text-white" href="/">Suggestion</Link>
                                 {/* <Link className="hover:opacity-90 text-white" href="/"> Returns Policy </Link> */}
                             </nav>
                         </div>

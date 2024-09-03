@@ -86,6 +86,7 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
         setWebcamEnabled(true); // Re-enable webcam if needed
         setMode(null);
         setImgUrl("")
+        
     };
 
     return (
@@ -99,14 +100,22 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
 
                         <button
                             className="border-[1px] h-32 w-32 p-4 border-red-800 text-red-800 px-4  rounded-lg mb-2 flex flex-col justify-center items-center"
-                            onClick={() => setMode("image")}
+                            onClick={() =>{
+                                setMode("image")
+                                setText("")
+
+                            } }
                         >
                             <GrScan className="h-16 w-16" />
                             Scan Image
                         </button>
                         <button
                             className="border-[1px] h-32 w-32 border-red-800 text-red-800  px-4 py-2 rounded-lg flex flex-col justify-center items-center"
-                            onClick={() => setMode("text")}
+                            onClick={() => {
+                                setImgUrl("")
+
+                                setMode("text")}
+                            } 
                         >
                             <TiDocumentText className="h-16 w-16" />
                             Enter Text

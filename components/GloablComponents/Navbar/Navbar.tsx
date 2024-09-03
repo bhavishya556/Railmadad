@@ -67,31 +67,31 @@ export default function Navbar() {
                 <div className=' flex-[75%] lg:flex items-center justify-end w-full hidden'>
                     <ul className={`flex gap-8  pr-12 text-base ${poppins.className} font-[500] tracking-wide text-gray-600`}>
                         <li className='hover:text-red-600 duration-150 hover:tracking-wider cursor-pointer py-2 relative group'>
-                            <Link href="/">
+                            {/* <Link href="/">
                                 <span>Train</span>
                                 <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <span className="absolute bottom-1 right-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
-                            </Link>
+                            </Link> */}
                         </li>
 
                         <li className='hover:text-red-600 duration-150 hover:tracking-wider cursor-pointer py-2 relative group'>
-                            <Link href="/about">
+                            <Link href="/feedback">
                                 <span>Feedback</span>
                                 <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <span className="absolute bottom-1 right-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                             </Link>
                         </li>
 
-                        <li className='hover:text-red-600 duration-150 hover:tracking-wider cursor-pointer py-2 relative group'>
+                        {/* <li className='hover:text-red-600 duration-150 hover:tracking-wider cursor-pointer py-2 relative group'>
                             <Link href="/services">
                                 <span>Enquriy</span>
                                 <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <span className="absolute bottom-1 right-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                             </Link>
-                        </li>
+                        </li> */}
 
                         <li className='hover:text-red-600 duration-150 hover:tracking-wider cursor-pointer py-2 relative group'>
-                            <Link href="/blogs">
+                            <Link href="/track">
                                 <span>Track Your Concern</span>
                                 <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <span className="absolute bottom-1 right-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
@@ -101,8 +101,8 @@ export default function Navbar() {
                         <li className='group'>
 
                             <div className='hover:text-red-600  border-red-600 border-[1px] px-5 rounded-lg duration-150  cursor-pointer py-2 relative '>
-                                <Link href="/career">
-                                    <span>Suggestion</span>
+                                <Link href="/rail-admin">
+                                    <span>Railway Admin Login</span>
                                     
                                 </Link>
 
@@ -114,7 +114,7 @@ export default function Navbar() {
 
                         </li>
                         <li className='hover:text-red-600 text-white  hover:bg-white hover:border-red-600 border-[1px] bg-red-600 rounded-lg px-5 duration-150  cursor-pointer py-2 relative '>
-                            <Link href="/contactus">
+                            <Link href="/feedback">
                                 <span className=''>Feedback</span>
                                 <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <span className="absolute bottom-1 right-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
@@ -132,26 +132,15 @@ export default function Navbar() {
         lg:hidden z-[999]  fixed w-full top-[4rem] overflow-y-auto  py-4 px-10
         duration-500 ${show ? "right-0" : "right-[-100%]"} bg-gray-100 border-b-border-[1px] border-black shadow-md`}
                 >
+                
                     <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/">Home</Link>
+                        <Link href="/blogs">Feedback</Link>
                     </li>
                     <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/about">About</Link>
+                        <Link href="/career">Track Your Concern</Link>
                     </li>
                     <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/services">Services</Link>
-                    </li>
-                    <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/cv">Submit CV</Link>
-                    </li>
-                    <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/blogs">Blogs</Link>
-                    </li>
-                    <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/career">Jobs</Link>
-                    </li>
-                    <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/contactus">Contact Us</Link>
+                        <Link href="/contactus">Railway Admin Login</Link>
                     </li>
 
                     {/* <li className='py-2'>
