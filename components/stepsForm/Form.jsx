@@ -121,17 +121,7 @@ const Form = () => {
       setGoBackVisible("invisible");
     }
 
-    // console.log(steps);
-    // console.log(stepNumber);
-    // console.log(yourInfo);
-    // console.log(plan);
-    //console.log(addons);
-    // console.log(planOptions);
-    // console.log(addonOptions);
-    // console.log(plan);
-    // console.log(isPlanEmpty);
-    // console.log(displayThankyou);
-    // console.log(planDuration);
+ 
   }, [
     stepNumber,
     yourInfo,

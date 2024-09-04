@@ -47,7 +47,7 @@ const ProfileImageUpload = ({ name }: { name: string }) => {
                 url: `${BASE_URL}${ImagesRoutes_API.uploadImages}`,
                 bodyData: formData,
             });
-            // console.log(response?.data);
+          
             // 
             setValue(name, response?.data?.data?.urls[0]);
             // 

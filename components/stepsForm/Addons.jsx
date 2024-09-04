@@ -4,7 +4,7 @@ const Addons = ({ phone, pnr, email, name, setPnr, setEmail, setName, setPhone,s
   console.log(des)
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("fun called")
+ 
 
 
     // Validate form fields
@@ -86,7 +86,7 @@ const Addons = ({ phone, pnr, email, name, setPnr, setEmail, setName, setPhone,s
             PNR (Required) <span className="text-red-500">*</span>
           </label>
           <input
-            type="text"
+            type="number"
             id="pnr"
             value={pnr}
             onChange={(e) => setPnr(e.target.value)}

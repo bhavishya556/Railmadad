@@ -58,6 +58,22 @@
     
   }
 }
+:root {
+  --color-staff-behaviour: #4CAF50; /* Example color */
+  --color-cleanliness: #2196F3;
+  --color-security: #FF9800;
+  --color-medical-assurance: #E91E63;
+  --color-ticketing: #9C27B0;
+  --color-water-availability: #00BCD4;
+  --color-maintenance: #FFC107;
+  --color-others: #8BC34A;
+  --chart-1: 120, 100%, 50%;
+  --chart-2: 240, 100%, 50%;
+  --chart-3: 30, 100%, 50%;
+  --chart-4: 330, 100%, 50%;
+  --chart-5: 60, 100%, 50%;
+}
+
 
 ::selection {
   color: white;

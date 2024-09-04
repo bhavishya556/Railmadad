@@ -14,7 +14,7 @@ export default async function AdminLayout({
   if (usertoken) {
     const res = await validateAdmin(usertoken.value);
     if (res?.success) {
-      redirect(`/en/admin/dashboard`);
+      redirect(`/rail-admin/admin/dashboard`);
     }
   }
 

@@ -56,6 +56,7 @@
     "react-toastify": "^10.0.5",
     "react-tsparticles": "^2.12.2",
     "react-webcam": "^7.2.0",
+    "recharts": "^2.12.7",
     "sharp": "^0.33.1",
     "swiper": "^11.0.5",
     "tailwind-merge": "^2.5.2",

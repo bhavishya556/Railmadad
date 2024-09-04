@@ -12,6 +12,8 @@ const Popup = dynamic(() => import('@/components/Home/Popup'), {
 
 import { useForm, FormProvider } from "react-hook-form";
 import { useState } from "react"
+import Navbar from '@/components/GloablComponents/Navbar/Navbar'
+import Footer from '@/components/GloablComponents/Footer/Footer'
 
 
 export default function Home() {
@@ -19,12 +21,14 @@ export default function Home() {
   const methods = useForm();
   return (
     <div className="w-full overflow-x-hidden min-h-[80vh] bg-white">
-      <Popup/>
 
 
     
 
+      <Navbar />
+      <Popup/>
       <StepForm />
+      <Footer />
 
 
 

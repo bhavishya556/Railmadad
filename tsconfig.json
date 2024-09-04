@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/HomePageComponents/Section1/TextEffect.jsx", "components/AdminPanel/ContactPageComponents/Table.jsx", "app/(root)/about/page.jsx", "components/HomePageComponents/Section7/Section7.tsx", "components/Cvcomponents/CvForm.tsx", "lib/actions/CvActions/CvActions.js", "components/stepsForm/ImageScan.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/HomePageComponents/Section1/TextEffect.jsx", "components/AdminPanel/ContactPageComponents/Table.jsx", "app/(root)/about/page.jsx", "components/HomePageComponents/Section7/Section7.tsx", "components/Cvcomponents/CvForm.tsx", "lib/actions/CvActions/CvActions.js", "components/stepsForm/ImageScan.jsx", "app/(root)/rail-admin/admin/dashboard/queries/page.tsx", "components/AdminPanel/chart/Char1.tsx"],
   "exclude": ["node_modules"]
 }

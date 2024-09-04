@@ -16,8 +16,7 @@ const FormField = ({
       setDisplayRequired("block");
       setRedBorder("border-[#ed3548]");
     }
-    // console.log(displayRequired);
-    // console.log(isEmpty);
+ 
   }, [isEmpty]);
 
   return (

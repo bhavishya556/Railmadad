@@ -68,9 +68,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ChakraProviderNext >
-        <Navbar/> 
+        {/* <Navbar/>  */}
         {children}
-        <Footer/> 
+        {/* <Footer/>  */}
         <Toaster  />
         </ ChakraProviderNext>
         <script src="./node_modules/preline/dist/preline.js"></script>

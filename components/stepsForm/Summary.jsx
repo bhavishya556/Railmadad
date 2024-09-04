@@ -24,11 +24,7 @@ const Summary = ({
   const [grandTotal, setGrandTotal] = useState(() => planPrice + addonsPrice);
 
   useEffect(() => {
-    // console.log(planPrice);
-    // console.log(addonsPrice);
-    // console.log(grandTotal);
-    // console.log(selectedPlan);
-    // console.log(selectedAddons);
+
   }, [selectedPlan, selectedAddons]);
 
   return (

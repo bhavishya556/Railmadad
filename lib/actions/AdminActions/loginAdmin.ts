@@ -2,7 +2,7 @@
 
 import { cookies } from 'next/headers'
 import { BASE_URL, AdminRoutes_API, apiConnector } from "@/lib/services/apis";
-import { AdminLoginFormFields } from '@/app/(root)/en/admin/login/page';
+import { AdminLoginFormFields } from '@/app/(root)/rail-admin/admin/login/page';
 
 export const loginAdmin = async (values: AdminLoginFormFields) => {
     try {

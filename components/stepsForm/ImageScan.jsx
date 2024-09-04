@@ -41,21 +41,7 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
         }
     };
 
-    // useEffect(() => {
-    //     // Function to request camera access
-    //     const requestCameraAccess = async () => {
-    //       try {
-    //        const cam =  await navigator.mediaDevices.getUserMedia({ video: true });
-    //        console.log("camera",cam)
-    //         setHasPermission(true); // Permission granted
-    //       } catch (err) {
-    //         console.error("Camera permission error:", err);
-    //         setHasPermission(false); // Permission denied or error
-    //       }
-    //     };
-    
-    //     requestCameraAccess();
-    //   }, []);
+
 
     // Function to handle file selection from input
     const handleImageUpload = (file) => {

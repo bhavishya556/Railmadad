@@ -32,6 +32,9 @@ export const ImagesRoutes_API : any = {
 
 export const MainQuery: any = {
     createQuery: "/api/v1/rail/createEntry",
+    getEntries: "/api/v1/rail/getEntries",
+    changeStatusById: "/api/v1/rail/changeStatusById",
+    depCount: "/api/v1/rail/depCount",
 
   
    

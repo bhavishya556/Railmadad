@@ -101,7 +101,7 @@ export default function Navbar() {
                         <li className='group'>
 
                             <div className='hover:text-red-600  border-red-600 border-[1px] px-5 rounded-lg duration-150  cursor-pointer py-2 relative '>
-                                <Link href="/rail-admin">
+                                <Link href="/rail-admin/admin/login">
                                     <span>Railway Admin Login</span>
                                     
                                 </Link>

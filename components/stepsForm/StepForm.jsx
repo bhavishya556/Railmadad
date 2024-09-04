@@ -39,6 +39,7 @@ const Form = () => {
   ]);
 
   const [img, setImg] = useState();
+  const [aboutImg, setAboutImg] = useState();
 
   const [text, setText] = useState();
   const [department, setDepartment] = useState("Health");
@@ -114,8 +115,9 @@ const Form = () => {
     }
 
     const res = await createQuery(data);
-    // console.log("main",res)
-    setQid(res.data._id);
+    
+    setQid(res.data._id)
+  
     setDisplayThankyou(true)
 
   }
@@ -140,8 +142,8 @@ const Form = () => {
       if (text) {
         setAnalysis(true);
         const res = await getDepartmentByText(text);
-        setDepartment(res)
-        console.log(res)
+        setDepartment(res.classification)
+    
 
         setTimeout(() => {
           setAnalysis(false);
@@ -155,8 +157,10 @@ const Form = () => {
       if (imgurl) {
         setAnalysis(true);
         const res = await getDepartmentByImg(imgurl);
-        setDepartment(res)
-        console.log(res)
+  
+        setDepartment(res.classification)
+        setAboutImg(res.description)
+  
 
         setTimeout(() => {
           setAnalysis(false);
@@ -251,6 +255,8 @@ const Form = () => {
                       <Plan
                         department={department}
                         setDepartment={setDepartment}
+                        aboutImg={aboutImg}
+                        setAboutImg={setAboutImg}
 
                       />
                     )) ||

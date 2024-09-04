@@ -82,7 +82,7 @@ export default function page() {
         variant: "success",
         title: res.message,
       });
-      router.push('/en/admin/dashboard')
+      router.push('/rail-admin/admin/dashboard')
     }
     else{
       toast({

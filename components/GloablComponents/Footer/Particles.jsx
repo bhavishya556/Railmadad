@@ -15,7 +15,7 @@ const ParticlesComponent = ({ className }) => {
   }, []);
 
   const particlesLoaded = (container) => {
-    console.log(container);
+
   };
 
   const options = useMemo(

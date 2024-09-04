@@ -28,28 +28,28 @@ const poppins = Poppins({
 
 const data =[
     {
-        link:'/en/admin/dashboard',
+        link:'/rail-admin/admin/dashboard',
         name:"Home",
         icon: FaHome,
     },
     // {
-    //     link:'/en/admin/dashboard/careers',
+    //     link:'/rail-admin/admin/dashboard/careers',
     //     name:"Career",
     //     icon: FaUserTie,
     // },
     {
-        link:'/en/admin/dashboard/applicants',
+        link:'/rail-admin/admin/dashboard/queries',
         name:"Show All Queries",
         icon: FaHospitalUser,
     },
 
     {
-        link:'/en/admin/dashboard/contact',
+        link:'/rail-admin/admin/dashboard/feedback',
         name:"Manage Feedback",
         icon: RiContactsFill,
     },
     {
-        link:'/en/admin/dashboard/cv',
+        link:'/rail-admin/admin/dashboard/analyze-query',
         name:"Analyze Query",
         icon: IoNewspaperOutline,
     },
@@ -58,7 +58,7 @@ const data =[
 const Sidebar = () => {
     const [show, setShow] = useState(true)
     return (
-        <div className={`${show ? "w-[15rem]" : "w-[3rem] justify-start items-center"} transition-all duration-500 h-screen bg-red-600 overflow-auto overflow-x-hidden flex flex-col gap-3 py-4 px-4 sidebar ${poppins.className}`}>
+        <div className={`${show ? "w-[15rem]" : "w-[3rem] justify-start items-center"} transition-all duration-500 h-screen bg-gray-600 overflow-auto overflow-x-hidden flex flex-col gap-3 py-4 px-4 sidebar ${poppins.className}`}>
             
             {
                 show ?
