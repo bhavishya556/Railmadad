@@ -7,6 +7,8 @@ import { TiDocumentText } from "react-icons/ti";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { CiCamera } from "react-icons/ci";
 import { ImMobile2 } from "react-icons/im";
+import { ToastAction } from "@/components/ui/toast"
+import { useToast } from "@/components/ui/use-toast"
 import MultiStepLoaderDemo from "@/components/Loader/MultiStepLoaderDemo"
 
 const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
@@ -23,6 +25,7 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
 
     const webcamRef = useRef(null);
 
+    const { toast } = useToast();
     // Function to capture an image
     const captureImage = () => {
         if (webcamRef.current) {
@@ -82,10 +85,10 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
                 <div className="flex px-5 h-full w-full justify-between  flex-col py-10">
                     <h2 className="text-xl font-bold mb-4">Tell me how I can solve you issue</h2>
 
-                    <div className="flex  w-full gap-20 ">
+                    <div className="flex  w-full justify-between  flex-wrap">
 
                         <button
-                            className="border-[1px] h-32 w-32 p-4 border-red-800 text-red-800 px-4  rounded-lg mb-2 flex flex-col justify-center items-center"
+                            className="border-[1px] h-32 w-30 m-2 p-4 border-red-800 text-red-800 px-4  rounded-lg mb-2 flex flex-col justify-center items-center"
                             onClick={() =>{
                                 setMode("image")
                                 setText("")
@@ -96,7 +99,7 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
                             Scan Image
                         </button>
                         <button
-                            className="border-[1px] h-32 w-32 border-red-800 text-red-800  px-4 py-2 rounded-lg flex flex-col justify-center items-center"
+                            className="border-[1px] h-32 w-32 m-2 border-red-800 text-red-800  px-4 py-2 rounded-lg flex flex-col justify-center items-center"
                             onClick={() => {
                                 setImgUrl("")
 
@@ -105,6 +108,37 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
                         >
                             <TiDocumentText className="h-16 w-16" />
                             Enter Text
+                        </button>
+                        <button
+                            className="border-[1px] h-32 w-32 m-2 border-red-200 text-red-200 cursor-not-allowed  px-4 py-2 rounded-lg flex flex-col justify-center items-center"
+                            onClick={() => {
+                      
+                                toast({
+                          
+                                      title: "We build this video feature in hackathon",
+                                    });
+                            
+                                  
+                            }} 
+                      
+                        >
+                            <TiDocumentText className="h-16 w-16" />
+                            Capture Video
+                        </button>
+                        <button
+                            className="border-[1px] h-32 w-32 border-red-200 m-2 cursor-not-allowed text-red-200  px-4 py-2 rounded-lg flex flex-col justify-center items-center"
+                            onClick={() => {
+                      
+                                toast({
+                          
+                                      title: "We build this audio feature in hackathon",
+                                    });
+                            
+                                  
+                            }} 
+                        >
+                            <TiDocumentText className="h-16 w-16" />
+                            Record audio
                         </button>
                     </div>
                 </div>
