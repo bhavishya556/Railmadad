@@ -45,7 +45,7 @@ export default function Component({ counts, total}:{counts:any,total:any}) {
 
 
     return (
-        <Card>
+        <Card className="w-full">
             <CardHeader>
                 <CardTitle>Bar Chart - Department Counts</CardTitle>
                 <CardDescription>Query Counts by Department</CardDescription>
@@ -57,7 +57,7 @@ export default function Component({ counts, total}:{counts:any,total:any}) {
                         data={chartData}
                         layout="vertical"
                         margin={{
-                            left: 0,
+                            left: 40,
                         }}
                     >
                         <YAxis

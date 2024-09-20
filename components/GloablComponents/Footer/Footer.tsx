@@ -26,7 +26,7 @@ const Footer = () => {
         <footer className="bg-transparent  text-white relative overflow-hidden ">
             <div className="relative  px-4 py-16 mx-auto sm:px-6 lg:px-8">
                 <div className='relative inset-0 h-full w-full' >
-                    <Particles className=" z-[-100000] fixed w-full" />
+                    <Particles className=" z-[-1000000] fixed w-full" />
                 </div>
                 <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div>

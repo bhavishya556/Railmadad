@@ -43,12 +43,11 @@ const schema = yup
     password: yup.string().required("Password is required"),
   });
 
-  export type AdminLoginFormFields = yup.InferType<typeof schema>;
+export type AdminLoginFormFields = yup.InferType<typeof schema>;
 
 export default function page() {
-
   const { toast } = useToast();
-  const router = useRouter()
+  const router = useRouter();
   const [loading, setLoading] = useState(false);
   const form = useForm<AdminLoginFormFields>({
     resolver: yupResolver(schema),
@@ -93,6 +92,12 @@ export default function page() {
     }
     setLoading(false);
     form.reset();
+  };
+
+  // Function to fill guest credentials
+  const loginAsGuest = () => {
+    form.setValue("email", "railmadad@mail.com");
+    form.setValue("password", "12345678");
   };
 
   return (
@@ -153,6 +158,11 @@ export default function page() {
             <Button disabled={loading} type="submit" className="w-full mt-5">
               {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
               Login
+            </Button>
+
+            {/* Button to fill guest credentials */}
+            <Button disabled={loading} type="button" onClick={loginAsGuest} className="w-full mt-3">
+              Login as a Guest
             </Button>
           </form>
         </Form>

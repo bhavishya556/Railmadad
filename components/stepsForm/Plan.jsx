@@ -9,14 +9,14 @@ const Plan = ({ department, setDepartment ,aboutImg,setAboutImg }) => {
   const words = `We sincerely apologize for the inconvenience. It looks like you've encountered an issue related to ${(department == "Other")?("any other department"):(department)}. Don't worry, we're on it and ready to assist you!`;
 
   const departments = [
-    "Staff Behaviour",
+    "Other",
     "Cleanliness",
+    "Staff Behaviour",
     "Security",
     "Medical Assurance",
     "Ticketing",
     "Water AvailabilitY",
     "Maintenance",
-    "Others",
   ];
 
   // useEffect(() => {
@@ -52,8 +52,9 @@ const Plan = ({ department, setDepartment ,aboutImg,setAboutImg }) => {
         </label>
         <select
           id="department-select"
-          value={department}
+          value={department || ""}
           onChange={handleDepartmentChange}
+          placeholder="select department"
           className="block  p-2 border border-red-800 rounded-md"
         >
           {departments.map((dept) => (

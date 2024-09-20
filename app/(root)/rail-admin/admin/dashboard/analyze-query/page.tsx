@@ -29,7 +29,7 @@ export default async function Page() {
   }
 
   return (
-    <div>
+    <div className='p-4'>
       <Chart1 counts={data?.counts} total={data?.total} />
     </div>
   );

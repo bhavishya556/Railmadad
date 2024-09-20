@@ -20,7 +20,7 @@ export default function Home() {
 
   const methods = useForm();
   return (
-    <div className="w-full overflow-x-hidden min-h-[80vh] bg-white">
+    <div className="w-full overflow-x-hidden min-h-[80vh] ">
 
 
     

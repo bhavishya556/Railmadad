@@ -8,7 +8,7 @@ const LogoutButton =  () => {
     const handleClick = async( ) => {
         const res = await logoutAdmin();
         if(res){
-            router.push('/en/admin/login')
+            router.push('/')
         }
     }
 

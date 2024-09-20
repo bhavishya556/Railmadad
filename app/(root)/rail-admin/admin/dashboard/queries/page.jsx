@@ -19,7 +19,7 @@ const Entries = () => {
     "Ticketing",
     "Water Availability",
     "Maintenance",
-    "Others",
+    "other",
   ];
 
   const fetchEntries = async () => {

@@ -196,7 +196,7 @@ const Form = () => {
 
 
   return (
-    <div className=" md:px-36 md:mt-20  my-5 ">
+    <div className=" md:px-36 md:pt-20 bg-white  py-10 ">
 
       <h1 className="text-center text-2xl md:text-4xl  font-semibold text-red-700 mb-5">RailMadad</h1>
       {

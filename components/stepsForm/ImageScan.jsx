@@ -252,12 +252,12 @@ const ImageScan = ({ setImg, setText, text,setImgUrl ,imgurl }) => {
                         </div>
 
 
-                        <button
+                        {/* <button
                             className="bg-green-500 text-white px-4 py-2 rounded ml-4"
                             disabled={!inputText}
                         >
                             Submit Text
-                        </button>
+                        </button> */}
                     </div>
 
                     <div className="mt-4">

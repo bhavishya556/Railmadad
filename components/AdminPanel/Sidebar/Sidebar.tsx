@@ -42,16 +42,16 @@ const data =[
         name:"Show All Queries",
         icon: FaHospitalUser,
     },
+    {
+        link:'/rail-admin/admin/dashboard/analyze-query',
+        name:"Analyze Query",
+        icon: IoNewspaperOutline,
+    },
 
     {
         link:'/rail-admin/admin/dashboard/feedback',
         name:"Manage Feedback",
         icon: RiContactsFill,
-    },
-    {
-        link:'/rail-admin/admin/dashboard/analyze-query',
-        name:"Analyze Query",
-        icon: IoNewspaperOutline,
     },
 ]
 
