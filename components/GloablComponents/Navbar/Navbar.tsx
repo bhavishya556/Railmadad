@@ -114,8 +114,8 @@ export default function Navbar() {
 
                         </li>
                         <li className='hover:text-red-600 text-white  hover:bg-white hover:border-red-600 border-[1px] bg-red-600 rounded-lg px-5 duration-150  cursor-pointer py-2 relative '>
-                            <Link href="/feedback">
-                                <span className=''>Feedback</span>
+                            <Link href="https://youtu.be/6KABKbfPIOE">
+                                <span className=''>Youtube Video</span>
                                 <span className="absolute bottom-1 left-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <span className="absolute bottom-1 right-1/2 w-0 h-[2px] bg-red-900 group-hover:w-1/2 group-hover:transition-all duration-150"></span>
                                 <div className='bg-black animate-ping absolute top-[-8px] right-[-8px] rounded-full  h-4 w-4'></div>
@@ -134,13 +134,16 @@ export default function Navbar() {
                 >
                 
                     <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/blogs">Feedback</Link>
+                        <Link href="/rail-admin/admin/login">Railway Admin Login</Link>
                     </li>
                     <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/career">Track Your Concern</Link>
+                        <Link href="https://youtu.be/6KABKbfPIOE">Youtube Video</Link>
                     </li>
                     <li className={`py-2 ${poppins.className} font-[500]`}>
-                        <Link href="/contactus">Railway Admin Login</Link>
+                        <Link href="/feedback">Feedback</Link>
+                    </li>
+                    <li className={`py-2 ${poppins.className} font-[500]`}>
+                        <Link href="/track">Track Your Concern</Link>
                     </li>
 
                     {/* <li className='py-2'>
